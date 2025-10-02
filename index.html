@@ -1,5 +1,6 @@
 <html><head>
 <meta charset="utf-8"/>
+<meta charset="utf-8"/>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
 <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
@@ -7,17 +8,17 @@
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style type="text/tailwindcss">
-    :root {
-      --primary-color: #13a4ec;
-    }
-    .material-symbols-outlined {
-      font-variation-settings:
+      :root {
+        --primary-color: #13a4ec;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
         'FILL' 0,
         'wght' 400,
         'GRAD' 0,
         'opsz' 24
-    }
-  </style>
+      }
+    </style>
 </head>
 <body class="bg-slate-50">
 <div class="relative flex h-auto min-h-screen w-full flex-col bg-slate-50 font-sans group/design-root overflow-x-hidden" style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(76,128,154)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e'); font-family: Inter, &quot;Noto Sans&quot;, sans-serif;">
@@ -30,21 +31,12 @@
 </div>
 <h2 class="text-slate-900 text-lg font-bold tracking-tight">TemplateCraft</h2>
 </div>
-<div class="flex flex-1 justify-center items-center gap-2">
-<button class="flex items-center gap-2 rounded-md h-9 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold transition-colors">
-<span class="material-symbols-outlined text-base">undo</span>
-<span class="truncate">Undo</span>
-</button>
-<button class="flex items-center gap-2 rounded-md h-9 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold transition-colors">
-<span class="material-symbols-outlined text-base">redo</span>
-<span class="truncate">Redo</span>
-</button>
-<div class="w-px h-6 bg-slate-200 mx-2"></div>
-<button class="flex items-center gap-2 rounded-md h-9 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold transition-colors">
-<span class="material-symbols-outlined text-base">devices</span>
-<span class="truncate">Responsive View</span>
-</button>
-</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<nav class="flex items-center gap-2">
+<a class="text-[var(--primary-color)] text-sm font-semibold leading-normal px-3 py-2 rounded-md transition-colors" href="#">Templates</a>
+<a class="text-slate-600 hover:text-slate-900 text-sm font-medium leading-normal px-3 py-2 rounded-md transition-colors" href="#">Editor</a>
+<a class="text-slate-600 hover:text-slate-900 text-sm font-medium leading-normal px-3 py-2 rounded-md transition-colors" href="#">Settings</a>
+</nav>
 <div class="flex items-center gap-2">
 <button class="flex min-w-[84px] items-center justify-center rounded-md h-9 px-4 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold transition-colors">
 <span class="truncate">Preview</span>
@@ -52,90 +44,149 @@
 <button class="flex min-w-[84px] items-center justify-center rounded-md h-9 px-4 bg-[var(--primary-color)] hover:opacity-90 text-white text-sm font-semibold transition-opacity">
 <span class="truncate">Publish</span>
 </button>
+</div>
 <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4SBW6nKsT7xPn8JNPqEN8jLSqyxwN_L1mg9P8NSesr7yRgRA8adbNgfcin7KivVnbnKScIR-elKScwvI5aeQReCfBUU3m0Z3zuWkUXLrBydn_s474wHBS5324k9CYfWjLfducByYCpGhuNRhkMziydrwWYa2TtUwQ8J3mvQrmvpdezys8aszyuCfRyqOUuZ0K2i6A11T1dbnaP56Ox__zTf0_6o4MKyYAz1aS68STqZhbZ8e4N1OYQJVJ59tk6rvyYvPA6SD6gg");'></div>
 </div>
 </header>
-<main class="grid grid-cols-[80px_350px_1fr] flex-1">
-<aside class="flex flex-col items-center border-r border-slate-200 bg-white py-4 gap-4">
-<a class="flex flex-col items-center justify-center gap-1.5 p-2 rounded-md bg-sky-100 text-[var(--primary-color)] w-16 h-16 transition-colors" href="#">
-<span class="material-symbols-outlined">dashboard</span>
-<p class="text-xs font-semibold">Templates</p>
-</a>
-<a class="flex flex-col items-center justify-center gap-1.5 p-2 rounded-md hover:bg-slate-100 text-slate-600 hover:text-slate-900 w-16 h-16 transition-colors" href="#">
-<span class="material-symbols-outlined">widgets</span>
-<p class="text-xs font-semibold">Components</p>
-</a>
-<a class="flex flex-col items-center justify-center gap-1.5 p-2 rounded-md hover:bg-slate-100 text-slate-600 hover:text-slate-900 w-16 h-16 transition-colors" href="#">
-<span class="material-symbols-outlined">layers</span>
-<p class="text-xs font-semibold">Layers</p>
-</a>
-<a class="flex flex-col items-center justify-center gap-1.5 p-2 rounded-md hover:bg-slate-100 text-slate-600 hover:text-slate-900 w-16 h-16 transition-colors mt-auto" href="#">
-<span class="material-symbols-outlined">settings</span>
-<p class="text-xs font-semibold">Settings</p>
-</a>
-</aside>
-<aside class="flex flex-col border-r border-slate-200 bg-white">
-<div class="p-6 border-b border-slate-200">
-<h2 class="text-slate-900 text-xl font-bold tracking-tight">Templates</h2>
+<main class="flex-1">
+<div class="p-8">
+<div class="flex flex-col gap-2 mb-8">
+<h1 class="text-slate-900 text-3xl font-bold tracking-tight">Template Library</h1>
+<p class="text-slate-500 text-sm">Browse, search, and select from a wide range of pre-designed templates.</p>
 </div>
-<div class="px-6 py-4">
-<div class="relative">
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="relative w-72">
 <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
-<input class="form-input w-full rounded-md border-slate-300 bg-slate-50 pl-10 pr-4 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)]" placeholder="Search templates..." type="text"/>
+<input class="form-input flex w-full rounded-md text-slate-900 focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border border-slate-300 bg-white focus:border-[var(--primary-color)] h-10 placeholder:text-slate-400 pl-10 pr-3 text-sm" placeholder="Search templates..."/>
+</div>
+<div class="flex items-center gap-2">
+<select class="form-select flex w-full rounded-md text-slate-900 focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border border-slate-300 bg-white focus:border-[var(--primary-color)] h-10 bg-[image:--select-button-svg] placeholder:text-slate-400 px-3 text-sm">
+<option value="all">All Categories</option>
+<option value="newsletter">Email Newsletter</option>
+<option value="landing">Landing Page</option>
+<option value="blog">Blog Post</option>
+<option value="portfolio">Portfolio</option>
+</select>
+<select class="form-select flex w-full rounded-md text-slate-900 focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border border-slate-300 bg-white focus:border-[var(--primary-color)] h-10 bg-[image:--select-button-svg] placeholder:text-slate-400 px-3 text-sm">
+<option value="recent">Sort by Recent</option>
+<option value="popular">Sort by Popular</option>
+<option value="name">Sort by Name</option>
+</select>
 </div>
 </div>
-<div class="flex-1 overflow-y-auto">
-<div class="grid grid-cols-1 gap-4 p-6 pt-2">
-<div class="flex flex-col gap-3 rounded-md border border-slate-200 bg-white p-3 cursor-pointer hover:border-[var(--primary-color)] transition-colors">
-<img alt="Website template thumbnail" class="aspect-video w-full rounded-md object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlmG20eTxqV5o9SjMd2-vCzwgXZSEAlcqicYp3hLKN9om-5MG1fqcZq472wcu9gTxmkkafmOgBVHJfNSn4-bnLigyYj0QvO4VY_WfDkP_3vGaJv81pRXkAIUoYcLDoI08GB16rNoYki2n1FfV-FXzhe58WcRNmSMitz1XRJU7OyRm5eL46aeWs3VrPwmSAReYj6GVPX4cKop05sSimjRb_sBEqeOWrbVqVt-G7OuGmrqkfnmg7PYdncZ6b7zYuYWYa3z2e4unozw"/>
-<div class="flex flex-col gap-0.5">
-<h3 class="text-slate-900 text-sm font-bold">Modern Portfolio</h3>
-<p class="text-slate-500 text-xs">A sleek and modern portfolio template.</p>
+<button class="flex min-w-[84px] items-center justify-center rounded-md h-10 px-4 bg-[var(--primary-color)] hover:opacity-90 text-white text-sm font-semibold transition-opacity gap-2">
+<span class="material-symbols-outlined text-base">add</span>
+<span class="truncate">Create New</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="group flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-4 transition-all hover:shadow-lg hover:border-[var(--primary-color)]">
+<div class="relative overflow-hidden rounded-md aspect-[4/3] bg-slate-100">
+<img alt="Template thumbnail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLgVu6Xmn7o4nZQQUCmyWO0noXyPO2FmwGyK-QM23iBCUjVnhMmSZRZB-Qd-Fk84h4C_cezN6Wovbo0SNlJ3X2Lb4RI0gnRW1eXHSfSkjnylOan2aQWpqiocHDZRdMh2I-1p7LBZykShgjlAiDNi9oPq6_CWaiN9D3ejEcSxHU1aLOa33nySXqJRSgj92ga_oOcyuah04fnxASQZ772X7lRFgNqgP6rQW4hoDddmGNdWiUpQMuLKNNXO6gn_B5jpsxZr5hqk-Uiw"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-white/80 backdrop-blur-sm hover:bg-white text-slate-800 text-sm font-semibold transition-colors">
+<span class="truncate">Preview</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-[var(--primary-color)] hover:opacity-90 text-white text-sm font-semibold transition-opacity">
+<span class="truncate">Import</span>
+</button>
 </div>
 </div>
-<div class="flex flex-col gap-3 rounded-md border border-slate-200 bg-white p-3 cursor-pointer hover:border-[var(--primary-color)] transition-colors">
-<img alt="Website template thumbnail" class="aspect-video w-full rounded-md object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpIkv5GeDSf-8Wq-0ZyxxNh8Y1c_Ta9LAkP9ZkiFZYoAuW3PfPXsnG7vP5OIfVGds1_IohikqmLeo1Qt9vAEJaqAMxUwf1lVG9op9a6t_LnnAu3f12iiF9feMHMrT0ZDqB1plxK8AnH4W-6UrPVi1cfdakS-hq_RCOksJnoURGtNgHanuAKMQgQ51xkHrLTO3lA-WMqj1OXBD0eqO_9e27O4qytZhw1ThNvpRdA3vl2muf7BhmyQMnjk2hx0Db4fgKqYkU4LWBRw"/>
-<div class="flex flex-col gap-0.5">
-<h3 class="text-slate-900 text-sm font-bold">E-commerce Store</h3>
-<p class="text-slate-500 text-xs">A complete e-commerce solution.</p>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 text-base font-bold">Modern Blog Post</h3>
+<p class="text-slate-500 text-sm">A clean and modern template for blog posts.</p>
 </div>
 </div>
-<div class="flex flex-col gap-3 rounded-md border border-slate-200 bg-white p-3 cursor-pointer hover:border-[var(--primary-color)] transition-colors">
-<img alt="Website template thumbnail" class="aspect-video w-full rounded-md object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8zL3iHzJ_jNRIRX8MSWlfdTRBPbC91en4DDYC44Q0HUoCi1ingU-gijFTDzy33NNAfZAFKRNlq__K_TM6bR87TTz7fRaTTNK5kzeAx28D7yK5nq_Kh1wkvgnc9kEGyOsIIM74BKbJOQLGKh2AWqT41PDvYl7vo1XrpY4p7bMqde2zXKy9j2FXdECMHdjOs0XiPjTH3Jcy3JIwsNw1Q_09CiNdCK9uI9qAG4kDuUfEdduFKCvKTCdLu5ymKT64t0BtUIw1lL0LYQ"/>
-<div class="flex flex-col gap-0.5">
-<h3 class="text-slate-900 text-sm font-bold">Agency Landing Page</h3>
-<p class="text-slate-500 text-xs">Perfect for creative agencies.</p>
+<div class="group flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-4 transition-all hover:shadow-lg hover:border-[var(--primary-color)]">
+<div class="relative overflow-hidden rounded-md aspect-[4/3] bg-slate-100">
+<img alt="Template thumbnail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCbQO2PqYDTM_i7dXte8UAXyzBfIf5Bx8cAfSUQtW_PA_oCwiK25OycBCqk_80ulb4_MQJdr4S7OooL7UxLj8qlc0xgLo2qM8m0ZZ6nkdubPz13YFYOoyUOp0NX1gFdd4CWFp4eH_tNyCYjLWVs0m3H-Mnjd-NLhkUtDboXrocJbgyZy8gfYJzo9Ci57AdRgjKPI8wCJjUYu7it-eXfQltqogf4KW_qQq4lsXH4GYEYJSO-hfM6LlfJxEnHJxRLB23FByjnpj6LQ"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-white/80 backdrop-blur-sm hover:bg-white text-slate-800 text-sm font-semibold transition-colors">
+<span class="truncate">Preview</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-[var(--primary-color)] hover:opacity-90 text-white text-sm font-semibold transition-opacity">
+<span class="truncate">Import</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 text-base font-bold">E-commerce Newsletter</h3>
+<p class="text-slate-500 text-sm">Promote your products with this vibrant template.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-4 transition-all hover:shadow-lg hover:border-[var(--primary-color)]">
+<div class="relative overflow-hidden rounded-md aspect-[4/3] bg-slate-100">
+<img alt="Template thumbnail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVUrUO6STSKvjIwAkj2A5yvQvuqs34LBYDf6JZZLJ76NWdC_V9ufL_EP43SxyrPpEv1_S7uXxEcocNgt1YfKckwiyktQBNINkvmm7O_RFJb0emNRjdR4t-_WNAWEjYo99Mpdk06M41STK_Fa9oRJBE9VYF_gyew4RuZ2jCsczwQ3Uk9jh8SfMilZlAtLTEFMgq0Mj_Yk9Ex40oa6kx_aQ2wPFXHF-s2-7A3idPftyaeVWzt15Be9FByAic8CmScVSEqx4MrDxqfA"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-white/80 backdrop-blur-sm hover:bg-white text-slate-800 text-sm font-semibold transition-colors">
+<span class="truncate">Preview</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-[var(--primary-color)] hover:opacity-90 text-white text-sm font-semibold transition-opacity">
+<span class="truncate">Import</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 text-base font-bold">Creative Portfolio</h3>
+<p class="text-slate-500 text-sm">Showcase your work with a stylish portfolio.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-4 transition-all hover:shadow-lg hover:border-[var(--primary-color)]">
+<div class="relative overflow-hidden rounded-md aspect-[4/3] bg-slate-100">
+<img alt="Template thumbnail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6yYVej0bQ1LWAs59C1WmP7NQDVNc88PiEd7Clv80xlSx8VjFtTTD9EnifRtqMRMNlu28Hk6u1QeAeTnuGkOg8SeqCKEvkER2UKn89z-fvqi9cCWB3d9C6vBa962itHpYYoLcpm9HJxiImpWoefpamV6v2BPg1gw5Fe-ASz0temlJnVVBHUDWgUHLy7E1ShIdYYzuG8oEJU57CcPO5KGgtSXJs0m-qxPDfNo1UpiiUclZCWO-rvg-yxKdDczBkuDFSsYFqp4TwOg"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-white/80 backdrop-blur-sm hover:bg-white text-slate-800 text-sm font-semibold transition-colors">
+<span class="truncate">Preview</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-[var(--primary-color)] hover:opacity-90 text-white text-sm font-semibold transition-opacity">
+<span class="truncate">Import</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 text-base font-bold">Startup Landing Page</h3>
+<p class="text-slate-500 text-sm">A professional landing page for your new venture.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-4 transition-all hover:shadow-lg hover:border-[var(--primary-color)]">
+<div class="relative overflow-hidden rounded-md aspect-[4/3] bg-slate-100">
+<img alt="Template thumbnail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKmlpEp38MgKeEltZd3UkD2yo_Au81984-57jMjqMzJnagvGfc12F2K7qcVSu31E0g0eV4I0NbdFrFo0KpHoztjcLYVNmHDmDthqWZhO-sqTkrP6ZtBytcdAUhIS-Um1VVKSJTJZoUamhHOjoCbCOpkC59lhwlpsLWMZwZ9tc_T8nLmJP0q6aY2E2SSY6TyH_XIn1mE1D6U2hpckuZ7lfjko65AHOXI5bAaMaR2nMeEwHZ4Rjzdek1pKRRYLRyetsL3Yk5NS9__A"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-white/80 backdrop-blur-sm hover:bg-white text-slate-800 text-sm font-semibold transition-colors">
+<span class="truncate">Preview</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-[var(--primary-color)] hover:opacity-90 text-white text-sm font-semibold transition-opacity">
+<span class="truncate">Import</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 text-base font-bold">Minimalist Resume</h3>
+<p class="text-slate-500 text-sm">A clean and simple resume template.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-4 transition-all hover:shadow-lg hover:border-[var(--primary-color)]">
+<div class="relative overflow-hidden rounded-md aspect-[4/3] bg-slate-100">
+<img alt="Template thumbnail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATVl_bQ3KherpZEJjpDWmLKQIboHJRmVJBpfav6TrjjmqfxA9D2OeojtHT05jcKB1y8TQ-lmcMRYHIzDEetSPLUsIei8mSH-gk2C5eTisQKeQ5hEk3N0Usku_aZ2gnH48a1Dq1CVFmBY_LQbp7X_X4z5B8N_XchQhC9q8nGCeqAoeHDlyrSQbx4t-R8kqOLM2nb6fF9krjX_94wpp5-wUSDmUyVjqcbZuSq_4b8vWKNQ5i7SxtPXvSV489leF6ZG3-TV9iyOxQVA"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-white/80 backdrop-blur-sm hover:bg-white text-slate-800 text-sm font-semibold transition-colors">
+<span class="truncate">Preview</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 px-4 bg-[var(--primary-color)] hover:opacity-90 text-white text-sm font-semibold transition-opacity">
+<span class="truncate">Import</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 text-base font-bold">Event Invitation</h3>
+<p class="text-slate-500 text-sm">Invite guests to your next event in style.</p>
 </div>
 </div>
 </div>
 </div>
-</aside>
-<section class="grid grid-cols-[1fr_320px]">
-<div class="flex flex-col p-8 bg-slate-100">
-<div class="flex flex-col items-center justify-center gap-4 rounded-lg border-2 border-dashed border-slate-300 px-6 py-20 flex-1 bg-white shadow-sm">
-<div class="flex flex-col items-center gap-2 text-center">
-<span class="material-symbols-outlined text-6xl text-slate-400">add_to_photos</span>
-<p class="text-slate-900 text-lg font-semibold">Canvas Area</p>
-<p class="text-slate-500 text-sm max-w-xs">
-                Drag and drop components here or select a template to get started.
-              </p>
 </div>
-</div>
-</div>
-<div class="flex flex-col border-l border-slate-200 bg-white">
-<div class="p-6 border-b border-slate-200">
-<h2 class="text-slate-900 text-xl font-bold tracking-tight">Properties</h2>
-</div>
-<div class="p-6 space-y-6 flex-1 overflow-y-auto">
-<div class="flex flex-col items-center justify-center text-center text-slate-500 h-full">
-<span class="material-symbols-outlined text-5xl mb-2">mouse</span>
-<p class="font-medium text-slate-700">Select an element</p>
-<p class="text-sm">Select an element on the canvas to see its properties.</p>
-</div>
-</div>
-</div>
-</section>
 </main>
 </div>
-
 </body></html>
